@@ -26,6 +26,7 @@ public class ClienteController {
     }
     @DeleteMapping("/cliente/{id}")
     public void deleteCliente(@PathVariable("id") int id) {
+        clienteService.deleteClienteById(id);
     }
     @PostMapping("/cliente")
     public void addCliente(@RequestBody Cliente cliente) {
@@ -33,5 +34,6 @@ public class ClienteController {
     }
     @PutMapping("/cliente")
     public void updateCliente(@RequestBody Cliente cliente) {
+        clienteService.saveOrUpdate(cliente);
     }
 }

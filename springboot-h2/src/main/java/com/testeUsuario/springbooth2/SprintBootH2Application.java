@@ -8,6 +8,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EntityScan("com.testeUsuario.entity")
 @EnableJpaRepositories("com.testeUsuario.repository")
 @SpringBootApplication
+
 public class SprintBootH2Application {
 	public static void main(String[] args) {
 		SpringApplication.run(SprintBootH2Application.class, args);
